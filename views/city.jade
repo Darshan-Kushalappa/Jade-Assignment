@@ -1,0 +1,17 @@
+html
+   head
+    include partials/head.jade
+   body
+    include partials/list.jade
+    br
+    br
+    br
+    include partials/cityName.jade
+    br
+    .container
+      .row
+        - for (var i = numberOfImages; i >= 1 ; i--)
+              .col-md-6
+               .thumbnail
+                 img(src='/images/'+city+'/'+city+'-'+i+'.jpg')
+    include partials/includes.jade
